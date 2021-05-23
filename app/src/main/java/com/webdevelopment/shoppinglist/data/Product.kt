@@ -1,4 +1,5 @@
 package com.webdevelopment.shoppinglist.data
 
-data class Product(val title: String = "", var isChecked: Boolean = false) {
-}
+import com.google.firebase.firestore.Exclude
+
+data class Product (var title: String = "", var quantity: Int = 0, @get:Exclude var isChecked: Boolean = false, @get:Exclude var id: String = "")

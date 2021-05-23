@@ -4,31 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/layout"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/ShopListTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:autofillHints="Enter a product title"
         android:hint="@string/enter_product_to_add_to_list"
-        app:layout_constraintEnd_toStartOf="@+id/ShopButtonAdd"
+        app:layout_constraintEnd_toStartOf="@+id/ShopListQuantity"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ShopListQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="Enter a quantity"
+        android:hint="@string/enter_quantity_to_add_to_list"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/ShopButtonAdd"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/ShopButtonAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="1dp"
         android:text="@string/add"
-        app:layout_constraintEnd_toStartOf="@+id/ShopButtonDelete"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/ShopButtonDelete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/delete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

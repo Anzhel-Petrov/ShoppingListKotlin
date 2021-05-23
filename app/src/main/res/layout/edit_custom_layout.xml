@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_layout_title"
+        android:text="@string/edit_the_name_or_the_quantity"
+        android:textSize="24sp"
+        android:gravity="center_horizontal">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_product_title"
+        android:textSize="24sp"
+        android:gravity="center_horizontal">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_product_quantity"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:gravity="center_horizontal">
+    </EditText>
+
+</LinearLayout>

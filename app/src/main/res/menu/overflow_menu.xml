@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_items_selected"
+        android:visible="false"
+        android:title="Items Selected"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/action_back"
+        android:visible="false"
+        android:title="Cancel"
+        android:icon="@drawable/ic_back"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="Sort List"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/action_sort_by_name"
+                android:title="Sort by name">
+            </item>
+
+            <item
+                android:id="@+id/action_sort_by_quantity"
+                android:title="Sort by quantity">
+            </item>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_delete"
+        android:visible="false"
+        android:title="Delete items"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/ic_edit"
+        android:title="Edit items"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_share"
+        android:title="Share List"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/action_delete_all"
+        android:icon="@drawable/ic_delete_all"
+        android:visible="false"
+        android:title="Select all"
+        app:showAsAction="always">
+    </item>
+
+</menu>
